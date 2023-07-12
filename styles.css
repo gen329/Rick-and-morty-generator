@@ -7,9 +7,12 @@
     color: white;
   }
 }
+
 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(100px, auto);
   color:white;
-  border: 5px;
 }
 
 h1 {
@@ -17,6 +20,11 @@ h1 {
   text-align: center;
 }
 
-.search-form {
+#search-form {
+  border: 30px;
+  border-color: lime;
   font-size: xx-large;
+  text-align: center;
+  padding-left: 75%;
 }
+
