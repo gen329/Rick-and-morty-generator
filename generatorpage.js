@@ -24,3 +24,10 @@ button.addEventListener("click", (e) => {
     .then(json => generateNewCharacter(json))
     .catch(displayErr);
 })
+
+
+showCharacter = (character) => {
+  document.getElementById('id').innerText = 
+  `${showCharacter.results[0].name.img}`
+  console.log(showCharacter)
+}
