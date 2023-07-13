@@ -1,4 +1,4 @@
-const BASE_URL = "https://rickandmortyapi.com/api/character/1";
+const BASE_URL = "https://rickandmortyapi.com/api/character";
 
 const button = document.querySelector("button");
 
@@ -28,6 +28,6 @@ button.addEventListener("click", (e) => {
 
 showCharacter = (character) => {
   document.getElementById('id').innerText = 
-  `${showCharacter.results[0].name.img}`
+  `${character.results[0].name.img}`
   console.log(character)
 }

@@ -25,14 +25,9 @@ img {
   width: 300px;
 }
 
-#search-form {
-  border: 30px;
-  border-color: lime;
+#character {
   font-size: xx-large;
   text-align: center;
   padding-left: 75%;
 }
 
-button {
-  align-items: center;
-}
