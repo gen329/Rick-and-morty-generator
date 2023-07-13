@@ -29,5 +29,5 @@ button.addEventListener("click", (e) => {
 showCharacter = (character) => {
   document.getElementById('id').innerText = 
   `${showCharacter.results[0].name.img}`
-  console.log(showCharacter)
+  console.log(character)
 }
