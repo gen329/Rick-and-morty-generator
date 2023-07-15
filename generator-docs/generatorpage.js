@@ -11,7 +11,7 @@ function generateNewCharacter(results) {
     imageQuery.remove();
   }
   if(h2Query) {
-    h2Query.remove()
+    h2Query.remove();
   }
 
   const newCharacter = results;
