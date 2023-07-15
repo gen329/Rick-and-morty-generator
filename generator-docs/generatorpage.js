@@ -5,6 +5,15 @@ const form = document.querySelector("#new-character");
 const div = document.querySelector(".image-container");
 
 function generateNewCharacter(results) {
+  const imageQuery = document.querySelector('img')
+  const h2Query = document.querySelector('h2')
+  if(imageQuery){
+    imageQuery.remove();
+  }
+  if(h2Query) {
+    h2Query.remove()
+  }
+
   const newCharacter = results;
   console.log(newCharacter)
   const searchValue = document.getElementById("name").value;
