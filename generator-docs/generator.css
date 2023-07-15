@@ -10,25 +10,35 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-rows: minmax(100px, auto);
+  text-align: center;
   color:white;
 }
 
 h1,
 h2 {
-  color: white;
-  text-align: center;
+    font-family: 'Get Schwifty', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 50px;
 }
 
 img {
+  border: 1px solid;
   height: 200px;
   width: 300px;
 }
 
-#character {
+#new-character {
+  font-family: 'Get Schwifty', sans-serif;
   font-size: xx-large;
   text-align: center;
   padding-left: 75%;
 }
 
+
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}

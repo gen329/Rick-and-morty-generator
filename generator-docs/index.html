@@ -8,23 +8,19 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RICK AND MORTY APPLICATION</title>
-  <link rel="stylesheet" href="generator-docs/generator.css">
-  <script defer src="generator-docs/generatorpage.js"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+  <link rel="stylesheet" href="./generator.css">
+  <script defer src="./generatorpage.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-32x32.png">
 </head>
 
 <body>
-  <h1> RICK AND MORTY CHARACTER GENERATOR </h1>
+  <h2 class="header"> RICK AND MORTY CHARACTER GENERATOR </h2>
   <style>
     body {
-      background-image: url("Images/rickandmorty.jpg");
+      background-image: url("/Images/rickandmorty.jpg");
       background-size: cover;
       background-repeat: no-repeat;
     }
-      /* @font-face {
-      font-family: 'Jedi';
-      src: url('font/StarJediOutline-y0xm.ttf');} */
-
   </style>
 
   <section class="container">
@@ -54,10 +50,14 @@
         <option>Human</option>
         <option>Alien</option>
       </select>
-      <br>
+      </br>
+      </br>
       <button id="submit">Submit</button>
+      </br>
+    </form>
+    <div class="image-container"></div>
   </section>
-  </form>
+
   <div class="image-container"></div>
 
 
