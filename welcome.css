@@ -27,4 +27,9 @@ img {
 
 button {
   align-items: center;
+
+}
+
+button.enter:hover {
+  background-color: lime;
 }

@@ -9,8 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RICK AND MORTY APPLICATION</title>
   <link rel="stylesheet" href="generator.css">
-  <link rel="welcome" href="welcome.html">
-  <script src="generatorpage.js"></script>
+  <script defer src="generatorpage.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
 </head>
 
@@ -29,7 +28,7 @@
   </style>
 
   <section class="container">
-    <form id="character">
+    <form id="new-character">
       <label for="name">NAME</label>
       <br>
       <input type="text" id="name" name="name">
@@ -56,9 +55,12 @@
         <option>Alien</option>
       </select>
       <br>
-      <button>Submit</button>
+      <button id="submit">Submit</button>
   </section>
   </form>
+  <div class="image-container"></div>
+
+
 </body>
 
 </html>

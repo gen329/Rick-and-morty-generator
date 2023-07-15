@@ -15,11 +15,12 @@
   color:white;
 }
 
-h1 {
+h1,
+h2 {
   color: white;
   text-align: center;
-  font-family: jedi;
 }
+
 img {
   height: 200px;
   width: 300px;

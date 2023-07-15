@@ -1,33 +1,33 @@
 const BASE_URL = "https://rickandmortyapi.com/api/character";
 
-const button = document.querySelector("button");
+const button = document.querySelector("#submit");
+const form = document.querySelector("#new-character");
+const div = document.querySelector("div")
 
-function generateNewCharacter({results}) {
+
+function generateNewCharacter(results) {
   const newCharacter = results;
+  let image = newCharacter.results[0].image;
   const section = document.createElement("section");
-  
   const img = document.createElement("img");
-  img.setAttribute("src", newCharacter.image);
-  
+  img.setAttribute("src", `${image}`);
+  img.setAttribute("alt","name");
   const h2 = document.createElement("h2");
   h2.textContent = newCharacter.name;
+  div.append(h2, img)
 
-  section.append(img,h2)
-  document.querySelector(".characters").append(section);
+  const characters = document.querySelector(".characters")
+  div.append(section);
 }
+ 
 
-
-button.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  fetch(`${BASE_URL}`)
-    .then(data => data.json())
-    .then(json => generateNewCharacter(json))
-    .catch(displayErr);
+  fetch(BASE_URL)
+  .then(data => data.json())
+  .then((json) => {
+      generateNewCharacter(json)
+
+    })
+
 })
-
-
-showCharacter = (character) => {
-  document.getElementById('id').innerText = 
-  `${character.results[0].name.img}`
-  console.log(character)
-}
