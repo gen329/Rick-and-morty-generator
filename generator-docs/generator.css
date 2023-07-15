@@ -40,6 +40,14 @@ img {
   font-family: 'Get Schwifty', sans-serif;
 }
 
+html { 
+  background: url("https://wallpapercave.com/wp/wp7227935.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @font-face {
   font-family: 'Get Schwifty';
   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
