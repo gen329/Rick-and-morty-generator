@@ -18,7 +18,7 @@
 h1 {
   color: white;
   text-align: center;
-  font-family: jedi;
+  font-family: 'Get Schwifty', sans-serif;
 }
 img {
   height: 200px;
@@ -27,9 +27,15 @@ img {
 
 button {
   align-items: center;
+  font-family: 'Get Schwifty', sans-serif;
 
 }
 
 button.enter:hover {
   background-color: lime;
+}
+
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
 }

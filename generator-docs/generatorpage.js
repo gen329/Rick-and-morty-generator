@@ -15,7 +15,6 @@ function generateNewCharacter(results) {
   }
 
   const newCharacter = results;
-  console.log(newCharacter)
   const searchValue = document.getElementById("name").value;
 
   for (let i = 0; i < newCharacter.results.length; i++) {
@@ -34,9 +33,9 @@ function generateNewCharacter(results) {
 
       div.append(h2, img);
       div.append(section);
+    }
+    //div.innerHTML = '<p>No matching character found.</p>';
   }
-  //div.innerHTML = '<p>No matching character found.</p>';
-}
 }
 
 form.addEventListener("submit", (e) => {
